@@ -97,7 +97,7 @@ document.querySelector("#todo_form").addEventListener("submit",(event) => {
     event.preventDefault()
     let value = event.target.todo_input.value;
     if(value.trim().startsWith(" ") || value.trim() === "") return UI.showMessage("Please provide to-do","danger")
-    value = value.toLowerCase().trim()
+    value = value.trim()
     if(ToDoStorage.find(value)) return UI.showMessage("Things to-do already have.","danger")
     let todo = {
         content:value,
