@@ -93,3 +93,25 @@
     font-size: 1rem;
     margin: .25rem 0;
 }
+@media only screen and (max-width: 960px)  {
+    .todo_app {
+        width:80%;
+    }
+}
+@media only screen and (max-width: 600px)  {
+    .todo_app {
+        width:95%;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #filter_todos {
+        margin:.25rem;
+    }
+    #search_form {
+       font-size:.9rem;
+        margin:.25rem;
+    }
+}

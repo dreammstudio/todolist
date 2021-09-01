@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2acb0393-6240-4c22-9d4f-d82b1b878fd5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/noframework/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/noframework/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noframework/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/noframework/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noframework/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/noframework/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1xUYnDMekaOnAIfhMznXZvRqTn5" />
@@ -62,11 +65,22 @@
       <workItem from="1630411303208" duration="5510000" />
       <workItem from="1630445035198" duration="24000" />
       <workItem from="1630445091913" duration="1212000" />
-      <workItem from="1630479358146" duration="10905000" />
+      <workItem from="1630479358146" duration="12000000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
