@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #17202A
 }
 .todo_app {
     height: 15rem;
@@ -16,6 +20,7 @@
     border: #3e3e3e 1px solid;
     transition: .3s;
     font-size: 1rem;
+    margin: 0 5px;
 }
 #form_input:focus,#search_form:focus,#search_form:hover, #form_input:hover {
     border: #4eb5eb 1px solid;
@@ -29,6 +34,7 @@
     font-size:1rem;
     transition: 0.2s;
     cursor: pointer;
+    color:white;
 }
 #add_todo:hover {
     background: #188977;
@@ -68,6 +74,7 @@
     margin: auto 10px;
     color:white;
     cursor: pointer;
+    border-radius: 5px;
 }
 .complete_todo {
     margin-top:auto;
@@ -93,9 +100,9 @@
     font-size: 1rem;
     margin: .25rem 0;
 }
-@media only screen and (max-width: 960px)  {
+@media only screen and (max-width: 970px)  {
     .todo_app {
-        width:80%;
+        width:85%;
     }
 }
 @media only screen and (max-width: 600px)  {
