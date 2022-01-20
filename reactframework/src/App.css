@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #17202A
+}
+.todo_app {
+    height: 15rem;
+    width:50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: .5rem;
+}
+#form_input,#search_form {
+    outline: none;
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: #3e3e3e 1px solid;
+    transition: .3s;
+    font-size: 1rem;
+    margin: 0 5px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+    border-bottom: #3e3e3e 1px solid;
+}
+#form_input:focus,#search_form:focus,#search_form:hover, #form_input:hover {
+    border: #4eb5eb 1px solid;
+}
+#add_todo {
+    background: none;
+    outline: none;
+    border:#188977 1px solid;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size:1rem;
+    transition: 0.2s;
+    cursor: pointer;
+    color:white;
+}
+#add_todo:hover {
+    background: #188977;
+    color:white;
+}
+#todo_form {
+    width:100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.todos {
+    background:  rgb(243, 244, 246);
+    padding:15px;
+    border-radius: 7px;
+    margin-top:3rem;
+}
+.todo, .todo_completed {
+    display: flex;
+    border-bottom: gray 1px solid;
+}
+.todo_completed p {
+    text-decoration:line-through;
+    overflow-wrap: break-word;
+    overflow:auto;
+}
+.todo p {
+    overflow-wrap: break-word;
+    overflow:auto;
+}
+.delete_todo {
+    text-align: center;
+    width:20px;
+    height: 20px;
+    outline: none;
+    border:0;
+    background:red;
+    margin: auto 10px;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.complete_todo {
+    margin-top:auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+.notify {
+    width: 50%;
+    height: auto;
+    margin: 3rem auto 3rem auto;
+    padding: 0 .5rem;
+    border-radius: 7px;
+}
+.notify h3 {
+    color:white;
+    font-weight: bold;
+    border-bottom: 1px white solid;
+    margin:0;
+}
+.notify p {
+    display: inline-block;
+    color:white;
+    font-size: 1rem;
+    margin: .25rem 0;
+}
+@media only screen and (max-width: 1100px)  {
+    .todo_app {
+        width:85%;
+    }
+}
+@media only screen and (max-width: 650px)  {
+    .todo_app {
+        width:95%;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding-bottom:10px;
+    }
+    #filter_todos {
+        margin:.25rem;
+    }
+    #search_form {
+       font-size:.9rem;
+    }
+}
