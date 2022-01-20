@@ -12,14 +12,24 @@ function App() {
     localStorage.setItem("todos",JSON.stringify(todos))
       setShownTodos(todos)
   },[todos])
+  useEffect(() => {
+    setTimeout(() => {
+      setMessage({error:false,message:""})
+    }, 3000);
+  },[message])
   return (
     <div className="todo_app">
+      <div className="notify" style={{display:`${message.message.length == 0 ? 'none' : 'block'}`,backgroundColor:`${message.error ? "#db471e" : "#188977"}`}}>
+        <h3>{message.error ? "Oops something went wrong!" : "Successfully!"}</h3>
+        <p>{message.message}</p>
+      </div>
       <form id="todo_form" onSubmit={(event) => {
          event.preventDefault()
          let value = event.target.todo_input.value;
          if(value.trim().startsWith(" ") || value.trim() === "") return setMessage({error:true,message:"Please provide to-do"})
          if(todos.find(e => e.content.trim() == value.trim())) return setMessage({error:true,message:"Things to-do already have."})
          setTodos([...todos,{content:value,status:false}])
+         setMessage({error:false,message:"Successfully added."})
          event.target.todo_input.value = ""
       }}>
         <div style={{ textAlign: "center" }}>
